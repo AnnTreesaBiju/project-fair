@@ -9,25 +9,30 @@ function Footer() {
   return (
     <div style={{ height: "300px", width: "100%" }} className='d-flex bg-success flex-column justify-content-center align-items-center mt-5'>
     <div className='d-flex  justify-content-evenly w-100 '>
-        <div style={{ width: "400px" }} className="website d-flex flex-column">
-            <h4> <i className="fa-solid fa-cloud-arrow-up"></i>
+        <div style={{ width: "400px",color:"rgb(16, 13, 41)" }} className=" fw-bolder website f d-flex flex-column text-primary">
+            <h4 style={{color:"rgb(42, 39, 76)"}}> <i className="fa-brands fa-stack-overflow ms-1"></i>
                 {" "}
-                Media Player</h4>
+                Project Fair</h4>
             <h6 style={{color:"white"}}>Designed and built with all the love in the world by my self with the help of my contributors.</h6>
             <h6 style={{color:"white"}}>Code licensed AnnTreesa Biju docs CC BY 3.0.</h6>
             <p style={{color:"white"}}>Currently v1.0.0</p>
         </div>
-        <div className="link d-flex flex-column">
-            <h4> Links</h4>
-            <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>Landing Page
+        <div className="link d-flex flex-column mb-3">
+            <h4 style={{color:"rgb(42, 39, 76)"}}> Links</h4>
+            <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>Home Page
             </Link>
-            <Link to={"/home"} style={{ textDecoration: "none", color: "white" }}>Home Page
+            <Link to={"/login"} style={{ textDecoration: "none", color: "white" }}>Login Page
             </Link>
-            <Link to={"/watch-history"} style={{ textDecoration: "none", color: "white" }}>Watch History
+            <Link to={"/register"} style={{ textDecoration: "none", color: "white" }}>Registraction Page
             </Link>
+            <Link to={"/projects"} style={{ textDecoration: "none", color: "white" }}>All Projects
+            </Link>
+            <Link to={"/dashbord"} style={{ textDecoration: "none", color: "white" }}>Dashboard
+            </Link>
+
         </div>
-        <div className="guide  d-flex flex-column">
-            <h4> Guide</h4>
+        <div className="guide  d-flex flex-column ">
+            <h4 style={{color:"rgb(42, 39, 76)"}}> Guide</h4>
             <Link to={"https://react-bootstrap.netlify.app/"} style={{ textDecoration: "none", color: "white" }}>React
             </Link>
             <Link to={"/homhttps://react-bootstrap.netlify.app/"} style={{ textDecoration: "none", color: "white" }}>React Bootstrap
@@ -38,7 +43,7 @@ function Footer() {
             </Link>
         </div>
         <div className="guide d-flex flex-column">
-            <h4>Contact Us</h4>
+            <h4 style={{color:"rgb(42, 39, 76)"}}>Contact Us</h4>
             <div className=" d-flex">
                 <Form.Control className='me-3' type="text" placeholder="Enter Your mail" />
                 <Button variant="primary">Submit</Button>
@@ -59,7 +64,7 @@ function Footer() {
             </div>
         </div>
     </div>
-    <p>Copyright © 2023 AnnTreesa Biju. Built with React.</p>
+    <p style={{color:"rgb(42, 39, 76)"}}>Copyright © 2023 AnnTreesa Biju. Built with React.</p>
 </div>
   )
 }
